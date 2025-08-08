@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enhanced HTML5 Form Example" />
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      background-color: Arial, sans-serif;
+      margin: 20px;
+      background-color:blanchedalmond;
+      color: black
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced HTML5 Form Example</h1>
+  <p>This page demonstrates lists, tables, media, and a fully-featured form with HTML5 validation.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Features of This Form</h2>
+    <ul>
+      <li>HTML5 semantic structure</li>
+      <li>Variety of input types</li>
+      <li>Form validation attributes</li>
+      <li>Accessible design</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sample Data Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lists</td>
+          <td>Organized points for clarity</td>
+        </tr>
+        <tr>
+          <td>Tables</td>
+          <td>Structured tabular data display</td>
+        </tr>
+        <tr>
+          <td>Media</td>
+          <td>Images or videos for visual context</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Embedded Media</h2>
+    <img src=image.jpeg alt="Lol,looks cool🔥">
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+      </div>
+
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?[0-9]{10,15}$" required>
+      </div>
+
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="readonlyUser" readonly>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+      </div>
+
+      <div>
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us something about yourself..." rows="4"></textarea>
+      </div>
+
+      <div>
+        <label>Interests:</label><br>
+        <input type="radio" id="coding" name="interest" value="coding">
+        <label for="coding">Coding</label>
+
+        <input type="radio" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+
+        <input type="radio" id="sports" name="interest" value="sports">
+        <label for="sports">Sports</label>
+      </div>
+
+      <div>
+        <label>Subscribe to Newsletter:</label><br>
+        <input type="radio" id="yes" name="subscribe" value="Yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="subscribe" value="No">
+        <label for="no">No</label>
+      </div>
+
+      <div>
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Richie Sylvesters</p>
+</footer>
+
+</body>
+</html>
